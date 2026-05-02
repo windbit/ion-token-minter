@@ -164,7 +164,7 @@ class JettonDeployController {
       messages: [
         {
           address: ownerJettonWallet,
-          amount: toNano(0.25).toString(),
+          amount: toNano(1.25).toString(),
           stateInit: undefined,
           payload: transfer(Address.parse(toAddress), Address.parse(fromAddress), amount)
             .toBoc()

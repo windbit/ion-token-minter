@@ -4,7 +4,7 @@ An open source token deployer webapp for the ION (Ice Open Network) blockchain, 
 
 ## How to use
 
-Make sure you have an ION wallet with at least 0.25 ION balance.
+Make sure you have an ION wallet with at least 1.25 ION balance.
 
 Open the deploy form in your web browser: https://ion-minter.windbit.dev
 
