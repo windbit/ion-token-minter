@@ -46,7 +46,7 @@ ION Minter — веб-приложение для деплоя Jetton-контр
 
 - `public/favicon.ico`, `public/logo192.png`, `public/logo512.png`, `public/og-image.jpg`, `src/assets/icons/logo.svg` — скопированы из `ion-dns-frontend` как временный плейсхолдер. Нужны финальные ION-Minter-ассеты (favicon, OG-картинка с подписью «ION Minter»).
 - `src/assets/icons/coin-logo.svg` — серая jetton-плейсхолдер-иконка, не TON-брендирована, оставлена как есть. Если хочется фирменный fallback — заменить.
-- `public/og-image.jpg` — текущий — обзорная картинка ION DNS; заменить на минтер-специфичную.
+- `public/og-image.jpg` — текущий файл с картинкой ION DNS оставлен в репозитории, но `og:image` / `twitter:image` / `itemprop=image` мета-теги в `public/index.html` временно удалены, чтобы DNS-картинка не вылезала в превью соцсетей. После создания минтер-специфичной картинки заменить файл и вернуть мета-теги (`og:image`, `og:image:width=1200`, `og:image:height=630`, `twitter:image`, `twitter:card=summary_large_image`).
 
 ### TonConnect / ION Wallet
 
