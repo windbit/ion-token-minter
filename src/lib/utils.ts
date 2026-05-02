@@ -52,6 +52,6 @@ export const createDeployParams = (params: JettonDeployParams, offchainUri?: str
     data: initData(params.owner, params.onchainMetaData, offchainUri),
     deployer: params.owner,
     value: JETTON_DEPLOY_GAS,
-    message: mintBody(params.owner, params.amountToMint, toNano(0.2), queryId),
+    message: mintBody(params.owner, params.amountToMint, toNano(1), queryId),
   };
 };

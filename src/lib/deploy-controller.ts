@@ -16,7 +16,7 @@ import { getClient } from "./get-ton-client";
 import { cellToAddress, makeGetCall } from "./make-get-call";
 import { SendTransactionRequest, TonConnectUI } from "@ion-gateway/ui-react";
 
-export const JETTON_DEPLOY_GAS = toNano(0.25);
+export const JETTON_DEPLOY_GAS = toNano(1.25);
 
 export enum JettonDeployState {
   NOT_STARTED,
@@ -101,7 +101,7 @@ class JettonDeployController {
       messages: [
         {
           address: contractAddress.toString(),
-          amount: toNano(0.01).toString(),
+          amount: toNano(0.05).toString(),
           stateInit: undefined,
           payload: changeAdminBody(zeroAddress()).toBoc().toString("base64"),
         },
@@ -131,9 +131,9 @@ class JettonDeployController {
       messages: [
         {
           address: jettonMaster.toString(),
-          amount: toNano(0.04).toString(),
+          amount: toNano(0.2).toString(),
           stateInit: undefined,
-          payload: mintBody(Address.parse(walletAddress), amount, toNano(0.02), 0)
+          payload: mintBody(Address.parse(walletAddress), amount, toNano(0.1), 0)
             .toBoc()
             .toString("base64"),
         },
@@ -164,7 +164,7 @@ class JettonDeployController {
       messages: [
         {
           address: ownerJettonWallet,
-          amount: toNano(0.05).toString(),
+          amount: toNano(0.25).toString(),
           stateInit: undefined,
           payload: transfer(Address.parse(toAddress), Address.parse(fromAddress), amount)
             .toBoc()
@@ -197,7 +197,7 @@ class JettonDeployController {
       messages: [
         {
           address: jettonAddress,
-          amount: toNano(0.031).toString(),
+          amount: toNano(0.155).toString(),
           stateInit: undefined,
           payload: burn(amount, Address.parse(walletAddress)).toBoc().toString("base64"),
         },
@@ -276,7 +276,7 @@ class JettonDeployController {
       messages: [
         {
           address: contractAddress.toString(),
-          amount: toNano(0.01).toString(),
+          amount: toNano(0.05).toString(),
           stateInit: undefined,
           payload: body.toBoc().toString("base64"),
         },
@@ -308,7 +308,7 @@ class JettonDeployController {
       messages: [
         {
           address: contractAddress.toString(),
-          amount: toNano(0.01).toString(),
+          amount: toNano(0.05).toString(),
           stateInit: undefined,
           payload: updateMetadataBody(buildJettonOnchainMetadata(data)).toBoc().toString("base64"),
         },

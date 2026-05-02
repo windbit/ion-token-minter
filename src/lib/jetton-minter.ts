@@ -236,7 +236,7 @@ export function mintBody(
         .storeCoins(jettonValue)
         .storeAddress(null)
         .storeAddress(owner)
-        .storeCoins(toNano(0.001))
+        .storeCoins(toNano(0.005))
         .storeBit(false) // forward_payload in this slice, not separate cell
         .endCell(),
     )
@@ -261,7 +261,7 @@ export function transfer(to: Address, from: Address, jettonAmount: BN) {
     .storeAddress(to)
     .storeAddress(from)
     .storeBit(false)
-    .storeCoins(toNano(0.001))
+    .storeCoins(toNano(0.005))
     .storeBit(false) // forward_payload in this slice, not separate cell
     .endCell();
 }
