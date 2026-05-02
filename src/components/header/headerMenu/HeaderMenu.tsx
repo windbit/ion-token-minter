@@ -58,6 +58,15 @@ const StyledTonConnectButton = styled(TonConnectButton)(({ theme }) => ({
       },
     },
   },
+  // @ion-gateway/ui инжектирует inline-reset `tc-root div > button { display: none !important }`,
+  // который в connected-state перебивает класс кнопки с адресом — кошелёк виден в DOM, но display: none.
+  "[data-tc-button]": {
+    display: "inline-flex !important",
+  },
+  // Прячем встроенный TON-значок в connected-state кнопке.
+  "[data-tc-button] svg": {
+    display: "none !important",
+  },
 }));
 
 export { HeaderMenu, MobileMenu };
