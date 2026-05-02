@@ -1,21 +1,20 @@
-# Minter - Webclient
+# ION Minter — Webclient
 
-An open source Jetton deployer webapp, based on [jetton contracts starter template](https://github.com/ton-blockchain/minter-contract).
+An open source token deployer webapp for the ION (Ice Open Network) blockchain, based on the [token contracts starter template](https://github.com/windbit/ion-minter-contract).
 
 ## How to use
 
-Instructions:
-Make sure you have a TON wallet with at least 0.25 TON balance.
+Make sure you have an ION wallet with at least 0.25 ION balance.
 
-Use your web browser to open the site of the deploy form: https://minter.ton.org
+Open the deploy form in your web browser: https://ion-minter.windbit.dev
 
-To use the Testnet version open this link: https://minter.ton.org?testnet=true
+To use the Testnet version open this link: https://ion-minter.windbit.dev?testnet=true
 
-> Safety Notice: The form is based on this repo and served from GitHub Pages
+> Safety Notice: The form is based on this repo and served from the Docker image at `ghcr.io/windbit/ion-token-minter`.
 
 Click the "Connect Wallet" button to connect your wallet.
 
-Fill in the information about your Jetton in the form - choose a name, ticker and image URL.
+Fill in the information about your token in the form — choose a name, ticker and image URL.
 
 Deploy and approve the deploy transaction in your wallet.
 
@@ -25,9 +24,11 @@ Once the token is deployed, the deploying wallet will receive all the tokens tha
 
 > This project is based on [create-react-app](https://create-react-app.dev/).
 
-Clone or fork the project
+Clone or fork the project.
 
 Run `npm install`
+
+Copy `.env.example` to `.env` and adjust values if needed.
 
 Run `npm start`
 
@@ -35,7 +36,7 @@ Open `http://localhost:3000`
 
 ## Is this tool safe?
 
-Yes. See https://github.com/ton-blockchain/minter-contract#qa-is-this-contract-deployer-safe
+Yes. See https://github.com/windbit/ion-minter-contract#qa-is-this-contract-deployer-safe
 
 # License
 

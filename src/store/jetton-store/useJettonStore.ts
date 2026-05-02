@@ -1,4 +1,4 @@
-import { useTonAddress } from "@tonconnect/ui-react";
+import { useTonAddress } from "@ion-gateway/ui-react";
 import QuestiomMarkImg from "assets/icons/question.png";
 import { useJettonAddress } from "hooks/useJettonAddress";
 import useNotification from "hooks/useNotification";

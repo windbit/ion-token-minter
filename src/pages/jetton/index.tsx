@@ -1,4 +1,4 @@
-import { useTonAddress } from "@tonconnect/ui-react";
+import { useTonAddress } from "@ion-gateway/ui-react";
 import { Screen, ScreenContent } from "components/Screen";
 import { useJettonAddress } from "hooks/useJettonAddress";
 import useNotification from "hooks/useNotification";

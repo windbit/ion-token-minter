@@ -3,7 +3,7 @@ import { checkImageURL, checkDecimals } from "helpers";
 const onchainFormSpec = [
   {
     name: "name",
-    label: "Jetton Name",
+    label: "Token Name",
     description: "Your project unabbreviated name with spaces (usually 1-3 words).",
     type: "text",
     default: "Bitcoin Cash",
@@ -12,7 +12,7 @@ const onchainFormSpec = [
   },
   {
     name: "symbol",
-    label: "Jetton Symbol",
+    label: "Token Symbol",
     description: "Currency symbol appearing in balance (usually 3-5 uppercase chars).",
     type: "text",
     default: "BCH",
@@ -21,14 +21,14 @@ const onchainFormSpec = [
   },
   {
     name: "decimals",
-    label: "Jetton Decimals",
-    description: "The decimal precision of your token (9 is TON default).",
+    label: "Token Decimals",
+    description: "The decimal precision of your token (9 is ION default).",
     type: "number",
     validate: checkDecimals,
     default: 9,
     showDefault: true,
     required: true,
-    errorMessage: "Decimals amount from 0 to 255 is required", // https://github.com/ton-blockchain/TEPs/blob/master/text/0064-token-data-standard.md#jetton-metadata-attributes
+    errorMessage: "Decimals amount from 0 to 255 is required",
   },
   {
     name: "mintAmount",
@@ -49,7 +49,7 @@ const onchainFormSpec = [
 
   {
     name: "tokenImage",
-    label: "Jetton Logo URL",
+    label: "Token Logo URL",
     description: "URL of 256x256 pixel PNG image of token logo with transparent background.",
     type: "string",
     required: false,

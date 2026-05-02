@@ -14,7 +14,7 @@ import {
 import { readJettonMetadata, changeAdminBody, JettonMetaDataKeys } from "./jetton-minter";
 import { getClient } from "./get-ton-client";
 import { cellToAddress, makeGetCall } from "./make-get-call";
-import { SendTransactionRequest, TonConnectUI } from "@tonconnect/ui-react";
+import { SendTransactionRequest, TonConnectUI } from "@ion-gateway/ui-react";
 
 export const JETTON_DEPLOY_GAS = toNano(0.25);
 

@@ -1,17 +1,4 @@
-<svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="18" cy="18" r="18" fill="#0098EA"/>
-<mask id="mask0_119_256" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="24" height="24">
-<circle cx="18" cy="18" r="11.5" fill="white" stroke="white"/>
-</mask>
-<g mask="url(#mask0_119_256)">
-<rect x="18" y="1.0293" width="8" height="8" transform="rotate(45 18 1.0293)" fill="white"/>
-<rect x="23.657" y="6.68604" width="8" height="8" transform="rotate(45 23.657 6.68604)" fill="#E1F5FF"/>
-<rect x="29.3137" y="12.3428" width="8" height="8" transform="rotate(45 29.3137 12.3428)" fill="#B2E1F8"/>
-<rect x="23.657" y="18" width="8" height="8" transform="rotate(45 23.657 18)" fill="#E1F5FF"/>
-<rect x="18" y="12.3428" width="8" height="8" transform="rotate(45 18 12.3428)" fill="#0098EA"/>
-<rect x="12.3433" y="6.68604" width="8" height="8" transform="rotate(45 12.3433 6.68604)" fill="#E1F5FF"/>
-<rect x="6.68628" y="12.3428" width="8" height="8" transform="rotate(45 6.68628 12.3428)" fill="#B2E1F8"/>
-<rect x="12.3433" y="18" width="8" height="8" transform="rotate(45 12.3433 18)" fill="#E1F5FF"/>
-<rect x="18" y="23.6567" width="8" height="8" transform="rotate(45 18 23.6567)" fill="white"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 148 148" fill="none">
+<rect width="148" height="148" fill="#0166FF" rx="74"/>
+<path fill="#fff" d="m74.184 15.016-.012-.053v.106l-8.336 36.395 8.336 18.011v.052l.012-.026.012.026v-.052l8.336-18.011-8.336-36.395v-.106zM73.837 132.889l.012.053v-.106l8.336-36.395L73.85 78.43v-.052l-.012.026-.012-.026v.052L65.49 96.44l8.336 36.396v.106zM124.47 43.257l.045-.046-.106.066-35.32 12.062-10.924 16.56-.047.028.03-.003-.02.03.056-.035 19.693-2.39 26.55-26.23.099-.062zM23.518 104.646l-.046.046.107-.066 35.32-12.062 10.923-16.56.047-.028-.03.003.02-.03-.056.035-19.693 2.39-26.55 26.23-.1.062zM23.653 43.064l-.056-.02.098.062 26.451 26.34 19.687 2.466.048.03-.017-.026.032.004-.05-.03-10.86-16.605L23.71 43.084l-.098-.061zM124.356 104.844l.056.02-.098-.062-26.451-26.339-19.687-2.467-.048-.03.017.026-.032-.004.05.03 10.86 16.606 35.277 12.201.098.061z"/>
 </svg>

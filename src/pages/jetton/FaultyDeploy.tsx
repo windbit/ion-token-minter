@@ -7,7 +7,7 @@ import { useState } from "react";
 import { jettonDeployController } from "lib/deploy-controller";
 import { Address } from "ton";
 import { AppButton } from "components/appButton";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
 
 function FaultyDeploy() {
   const {

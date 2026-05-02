@@ -53,7 +53,7 @@ export const Header = () => {
             />
             <HeaderExampleTextWrapper>
               <HeaderExampleText>
-                Enter an existing Jetton contract address.
+                Enter an existing token contract address.
                 <HeaderExampleLink variant="body2" onClick={() => setExample(EXAMPLE_ADDRESS)}>
                   {" "}
                   Use example.

@@ -12,7 +12,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { ThemeProvider as MakeStylesProvider } from "@mui/material";
 import theme from "theme";
 import { SnackbarProvider } from "notistack";
-import { THEME, TonConnectUIProvider } from "@tonconnect/ui-react";
+import { THEME, TonConnectUIProvider } from "@ion-gateway/ui-react";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
@@ -23,7 +23,10 @@ root.render(
         <Router>
           <SnackbarProvider maxSnack={3}>
             <TonConnectUIProvider
-              manifestUrl="https://minter.ton.org/tonconnect-manifest.json"
+              manifestUrl={
+                process.env.REACT_APP_MANIFEST_URL ||
+                "https://ion-minter.windbit.dev/tonconnect-manifest.json"
+              }
               uiPreferences={{ theme: THEME.LIGHT }}>
               <App />
             </TonConnectUIProvider>

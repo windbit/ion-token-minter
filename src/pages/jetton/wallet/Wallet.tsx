@@ -20,7 +20,7 @@ export const Wallet = () => {
   return (
     <StyledBlock sx={{ width: "calc(45% - 15px)" }}>
       <AppHeading
-        text={`${!params.get("address") ? "Connected" : ""} Jetton wallet`}
+        text={`${!params.get("address") ? "Connected" : ""} Token wallet`}
         variant="h4"
         fontWeight={800}
         fontSize={20}
@@ -34,7 +34,7 @@ export const Wallet = () => {
           dataLoading={jettonLoading}
           address={selectedWalletAddress}
           regularAddress
-          description="Connected wallet public address, can be shared to receive jetton transfers"
+          description="Connected wallet public address, can be shared to receive token transfers"
           children={
             <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <CheckWalletBalancePopup showPopup={showPopup} close={() => setShowPopup(false)} />

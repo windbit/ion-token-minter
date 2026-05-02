@@ -16,7 +16,13 @@ import { offchainFormSpec, onchainFormSpec } from "./data";
 import { Form } from "components/form";
 import { GithubButton } from "pages/deployer/githubButton";
 import { useNavigatePreserveQuery } from "lib/hooks/useNavigatePreserveQuery";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
+import {
+  JETTON_DEPLOYER_CONTRACTS_GITHUB,
+  JETTON_DEPLOYER_WEBCLIENT_GITHUB,
+  JETTON_BEST_PRACTICES_URL,
+  JETTON_SAFETY_URL,
+} from "consts";
 
 const DEFAULT_DECIMALS = 9;
 
@@ -156,54 +162,34 @@ function Description() {
             fontWeight: 500,
           },
         }}>
-        Jetton is the fungible{" "}
-        <Link
-          target="_blank"
-          href="https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md">
-          token standard
-        </Link>{" "}
-        for{" "}
-        <Link target="_blank" href="https://ton.org">
-          TON Blockchain
+        Deploy your own fungible token on the{" "}
+        <Link target="_blank" href="https://ice.io">
+          ION Blockchain
         </Link>
-        . This free educational tool allows you to deploy your own Jetton to mainnet in one click.
-        You will need at least 0.25 TON for deployment fees. <br />
+        . This free educational tool allows you to deploy your own token to mainnet in one click.
+        You will need at least 0.25 ION for deployment fees. <br />
         <Spacer />
         For detailed instructions and in-depth explanations of all fields please see the{" "}
-        <Link
-          target="_blank"
-          href="https://github.com/ton-blockchain/minter-contract#jetton-metadata-field-best-practices">
+        <Link target="_blank" href={JETTON_BEST_PRACTICES_URL}>
           GitHub README
         </Link>
         . It includes several best practice recommendations so please take a look.
         <Spacer />
         Never deploy code that you've never seen before! This deployer is fully open source with all
         smart contract code{" "}
-        <Link target="_blank" href="https://github.com/ton-blockchain/minter-contract">
+        <Link target="_blank" href={JETTON_DEPLOYER_CONTRACTS_GITHUB}>
           available here
         </Link>
         . The HTML form is also{" "}
-        <Link target="_blank" href="https://github.com/ton-blockchain/minter">
+        <Link target="_blank" href={JETTON_DEPLOYER_WEBCLIENT_GITHUB}>
           open source
-        </Link>{" "}
-        and served from{" "}
-        <Link target="_blank" href="https://github.com/ton-blockchain/minter">
-          GitHub Pages
         </Link>
         . <Spacer />
         Is this deployer safe? Yes! Read{" "}
-        <Link
-          target="_blank"
-          href="https://github.com/ton-blockchain/minter-contract#protect-yourself-and-your-users">
+        <Link target="_blank" href={JETTON_SAFETY_URL}>
           this
         </Link>{" "}
         to understand why.
-        <Spacer />
-        Learn more about other token-minting solutions in our{" "}
-        <Link target="_blank" href="https://blog.ton.org/history-of-mass-minting-on-ton">
-          article
-        </Link>
-        .
       </Typography>
       <GithubButton />
     </StyledDescription>

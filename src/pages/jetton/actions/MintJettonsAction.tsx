@@ -9,7 +9,7 @@ import { Address } from "ton";
 import { toDecimalsBN } from "utils";
 import { AppButton } from "components/appButton";
 import { AppNumberInput } from "components/appInput";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
 
 function MintJettonsAction() {
   const [amount, setAmount] = useState<number | undefined>(undefined);

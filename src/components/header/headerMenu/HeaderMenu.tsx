@@ -9,7 +9,8 @@ import {
   AppMenu,
   HeaderTypography,
 } from "./styled";
-import { TonConnectButton } from "@tonconnect/ui-react";
+import { TonConnectButton } from "@ion-gateway/ui-react";
+import { JETTON_DEPLOYER_WEBCLIENT_GITHUB } from "consts";
 
 interface MenuProps {
   closeMenu?: () => void;
@@ -38,7 +39,7 @@ const HeaderMenu: React.FC<MenuProps> = (props) => {
       </div>
       <IconButton
         sx={{ padding: 0, ml: 1.5 }}
-        href="https://github.com/ton-blockchain/minter"
+        href={JETTON_DEPLOYER_WEBCLIENT_GITHUB}
         target="_blank">
         <StyledGithubIcon width={20} height={20} src={githubIcon} />
         <HeaderTypography variant="h5">GitHub</HeaderTypography>

@@ -10,7 +10,7 @@ import { Typography } from "@mui/material";
 import bullet from "assets/icons/bullet.svg";
 import error from "assets/icons/error-notification.svg";
 import { Box } from "@mui/system";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
 
 function RevokeOwnershipAction() {
   const [actionInProgress, setActionInProgress] = useState(false);

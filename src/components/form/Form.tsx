@@ -19,7 +19,7 @@ import { StyledTopImg } from "pages/jetton/styled";
 import LoadingImage from "components/LoadingImage";
 import { AppHeading } from "components/appHeading";
 import { useJettonAddress } from "hooks/useJettonAddress";
-import { useTonAddress } from "@tonconnect/ui-react";
+import { useTonAddress } from "@ion-gateway/ui-react";
 import { onConnect } from "utils";
 
 interface FormProps {
@@ -49,11 +49,12 @@ export function Form({
   const { jettonAddress } = useJettonAddress();
   const matches = useMediaQuery("(max-width:599px)");
   const tokenImage = inputs.filter((i) => i.name === "tokenImage")?.[0];
-  const { control, handleSubmit, formState, setValue, clearErrors, watch, getValues } = useForm({
-    mode: "onSubmit",
-    reValidateMode: "onChange",
-    defaultValues,
-  });
+  const { control, handleSubmit, formState, setValue, clearErrors, watch, getValues } =
+    useForm<any>({
+      mode: "onSubmit",
+      reValidateMode: "onChange",
+      defaultValues,
+    });
   const errors = formState.errors as any;
   const onFormError = (value: any) => {
     const firstError = value[Object.keys(value)[0]];

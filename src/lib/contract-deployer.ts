@@ -1,6 +1,6 @@
 import BN from "bn.js";
 import { Address, Cell, contractAddress, StateInit } from "ton";
-import { SendTransactionRequest, TonConnectUI } from "@tonconnect/ui-react";
+import { SendTransactionRequest, TonConnectUI } from "@ion-gateway/ui-react";
 
 interface ContractDeployDetails {
   deployer: Address;

@@ -3,13 +3,12 @@ import BurnJettonsAction from "./actions/BurnJettonsAction";
 import MintJettonsAction from "./actions/MintJettonsAction";
 import RevokeOwnershipAction from "./actions/RevokeOwnershipAction";
 import { JettonDetailMessage } from "./types";
+import { JETTON_BEST_PRACTICES_URL, JETTON_SAFETY_URL } from "consts";
 export { BigNumber } from "bignumber.js";
 
-const commonGithubUrl =
-  "https://github.com/ton-blockchain/minter-contract#protect-yourself-and-your-users";
+const commonGithubUrl = JETTON_SAFETY_URL;
 
-const offChainGithubUrl =
-  "https://github.com/ton-blockchain/minter-contract#jetton-metadata-field-best-practices";
+const offChainGithubUrl = JETTON_BEST_PRACTICES_URL;
 
 export const getFaultyMetadataWarning = (isAdminRevokedOwnership?: boolean) => {
   if (isAdminRevokedOwnership) {
@@ -68,7 +67,7 @@ export const getMetadataWarning = (
     case "offchain_ipfs":
       return {
         type: "warning",
-        text: `This jetton’s metadata (name, decimals and symbol) is stored on IPFS instead of on-chain. It will not change, but be careful, it can disappear and become unpinned. [Read more](${offChainGithubUrl}).`,
+        text: `This token’s metadata (name, decimals and symbol) is stored on IPFS instead of on-chain. It will not change, but be careful, it can disappear and become unpinned. [Read more](${offChainGithubUrl}).`,
       };
     case "offchain_private_domain":
       return {
@@ -88,7 +87,7 @@ export const getTotalSupplyWarning = (
   if (persistenceType === "onchain" && !adminRevokedOwnership) {
     return {
       type: "warning",
-      text: `The admin can mint more of this jetton without warning. [Read more](${commonGithubUrl})`,
+      text: `The admin can mint more of this token without warning. [Read more](${commonGithubUrl})`,
     };
   }
 };

@@ -8,7 +8,7 @@ import useJettonStore from "store/jetton-store/useJettonStore";
 import { AppButton } from "components/appButton";
 import { AppNumberInput } from "components/appInput";
 import { toDecimalsBN } from "utils";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
 
 function BurnJettonsAction() {
   const [amount, setAmount] = useState<number | undefined>(undefined);

@@ -5,7 +5,7 @@ import { JettonStoreState } from "store/jetton-store";
 import { jettonDeployController } from "lib/deploy-controller";
 import { Address } from "ton";
 import useNotification from "hooks/useNotification";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
 import { useState } from "react";
 
 const inputsName = ["name", "symbol", "decimals", "tokenImage", "description"];

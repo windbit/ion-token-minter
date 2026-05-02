@@ -10,7 +10,7 @@ import { AppNumberInput, AppTextInput } from "components/appInput";
 import { toDecimalsBN } from "utils";
 import { useRecoilState } from "recoil";
 import { jettonActionsState } from "pages/jetton/actions/jettonActions";
-import { useTonAddress, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonAddress, useTonConnectUI } from "@ion-gateway/ui-react";
 
 export const TransferAction = () => {
   const { balance, symbol, jettonWalletAddress, getJettonDetails, isMyWallet, decimals } =

@@ -3,16 +3,8 @@ import { BN } from "bn.js";
 import { zeroAddress } from "lib/utils";
 import { Address } from "ton";
 
-export const scannerUrl = (isSandbox?: boolean, regularAddress?: boolean) => {
-  if (isSandbox) {
-    return `https://sandbox.tonwhales.com/explorer/address`;
-  }
-
-  if (regularAddress) {
-    return `https://tonscan.org/address`;
-  }
-
-  return `https://tonscan.org/jetton`;
+export const scannerUrl = (_isSandbox?: boolean, _regularAddress?: boolean) => {
+  return `https://explorer.ice.io/address`;
 };
 
 export const getUrlParam = (name: string) => {

@@ -62,7 +62,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ example, resetExample, clo
             <img src={SearchImg} width={18} height={18} alt="Search Icon" />
           </IndentlessIcon>
           <SearchBarInput
-            placeholder="Jetton address"
+            placeholder="Token address"
             onPaste={(e: any) => setValue(e.target.value)}
             onChange={(e) => setValue(e.target.value)}
             value={addressInput.value}
